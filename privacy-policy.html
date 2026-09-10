@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Family Budget Privacy Policy</title>
+<style>body{font-family:system-ui,sans-serif;max-width:820px;margin:40px auto;padding:0 20px;line-height:1.6}h1,h2{line-height:1.25}small{color:#555}.box{padding:16px;border:1px solid #ddd;border-radius:12px}</style>
+</head>
+<body>
+<h1>Family Budget Privacy Policy</h1>
+<p><strong>App:</strong> Family Budget<br><strong>Developer:</strong> Polvarix<br><strong>Support:</strong> kvozipol@gmail.com</p>
+<p><small>Effective date: 8 September 2026</small></p>
+
+<h2>1. What Family Budget does</h2>
+<p>Family Budget is a budgeting and expense-tracking app. Most budget data is stored locally on the user's device. Optional family synchronization uses Supabase.</p>
+
+<h2>2. Local budget data</h2>
+<p>Personal transactions remain on the device and are not uploaded by Family Budget. Receipt images are used locally for receipt capture. This release does not use cloud OCR or cloud AI for receipts.</p>
+
+<h2>2a. ML Kit and QR scanner diagnostics</h2>
+<p>Receipt OCR uses Google ML Kit and family-invitation QR scanning uses Google Code Scanner. Receipt images and QR image data are processed on-device for the requested feature and are not uploaded by Family Budget as user content. Google states that these SDKs may collect limited device/app information, per-installation identifiers, performance metrics, feature event/configuration data and error codes for diagnostics and usage analytics. This diagnostic data is encrypted in transit. Family Budget disables Code Scanner auto-zoom to avoid the additional auto-zoom telemetry described by Google.</p>
+<p>Google ML Kit data disclosure information: <a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a></p>
+<h2>3. Family synchronization</h2>
+<p>If family synchronization is used, Family Budget creates an anonymous Supabase Auth account and synchronizes data marked as family data. This may include family/member identifiers, display names, avatar choice, transaction amounts, currencies, categories, dates, merchant/note fields entered by the user, and transaction source metadata.</p>
+
+<h2>3a. Family sharing rules, reports and blocking</h2>
+<p>Family-shared fields can be visible to invited members of the same family. Before using cloud family sharing, the user must accept the Family Sharing Rules. The rules prohibit threats, harassment, hateful or degrading content, sexual content, illegal content, spam, fraud and other abuse.</p>
+<p>Connected users can report another connected member in the app. A safety report stores the family/member identifiers needed to validate the report, the selected reason, optional details supplied by the reporter, the action taken and a timestamp. Family owners can report and block a member; non-owner members can report abuse and leave the family. See the <a href="family-sharing-rules.html">Family Sharing Rules</a>.</p>
+
+<h2>4. Premium and Google Play</h2>
+<p>Premium subscriptions use Google Play Billing. Purchase information is verified by a Family Budget server function against the Google Play Developer API. Raw purchase tokens are not stored server-side; the service stores a SHA-256 token hash and subscription lifecycle metadata needed to provide and protect Premium access.</p>
+
+<h2>5. Voice input</h2>
+<p>Voice input is started by the user and uses the Android speech-recognition service available on the device. Family Budget does not store raw microphone audio. The selected speech-recognition provider may process audio under its own privacy terms.</p>
+
+<h2>6. Feedback</h2>
+<p>Feedback is voluntary and is prepared in the user's email application for <a href="mailto:kvozipol@gmail.com">kvozipol@gmail.com</a>. If the user enables the optional technical-information switch, the message may include only the app version, Android version, device manufacturer/model, and app language. Family Budget does not automatically attach transactions, amounts, receipts, family identifiers, or authentication tokens.</p>
+
+<h2>7. Ratings and reviews</h2>
+<p>Family Budget may use Google Play In-App Review after sufficient app usage. The app does not receive or store the user's star rating or review text from this flow.</p>
+
+<h2>8. Camera, QR and biometrics</h2>
+<p>Camera/QR features run only after the user's action. Biometric authentication is handled by Android; Family Budget does not receive or store biometric templates.</p>
+
+<h2>9. Security</h2>
+<p>Supabase access and refresh tokens stored on the device are protected using Android Keystore AES-GCM. Android cloud backup is disabled for application data. Server access is protected by authentication and database access controls.</p>
+
+<h2>10. Data sharing and sale</h2>
+<p>Family Budget does not sell personal data and does not contain advertising. Data is shared with service providers only as needed to provide user-requested functionality, such as Supabase family synchronization, Google Play subscription verification, Android speech recognition, and the user's chosen email service for feedback.</p>
+
+<h2>11. Account and data deletion</h2>
+<p>Users can delete the anonymous cloud account and related server data inside the app: <strong>Settings → Support &amp; information → Cloud account → Delete cloud account and data</strong>. Local budget data on the device is not automatically deleted by this cloud-account action. Subscription cancellation is managed separately through Google Play.</p>
+<p>See the <a href="account-deletion.html">Family Budget account deletion instructions</a>.</p>
+
+<h2>12. Data retention</h2>
+<p>Local data remains until the user edits/deletes it or removes app data. Family-sync server data remains while needed for the connected family functionality and is deleted through the cloud-account deletion process as described above. Safety reports are linked to the associated family/member records and are removed with the associated cloud data under the current deletion model. Subscription metadata is retained only as needed for entitlement, security, and applicable legal/accounting requirements.</p>
+
+<h2>13. Children</h2>
+<p>Family Budget is not designed or marketed as a children's app.</p>
+
+<h2>14. Contact</h2>
+<div class="box"><p>Questions about privacy or deletion: <a href="mailto:kvozipol@gmail.com">kvozipol@gmail.com</a></p></div>
+</body>
+</html>
