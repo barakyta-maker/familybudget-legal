@@ -9,19 +9,19 @@
 <body>
 <h1>Ration Privacy Policy</h1>
 <p><strong>App:</strong> Ration (Рацион), package <code>com.polvarix.ration</code><br><strong>Developer:</strong> Polvarix<br><strong>Contact:</strong> <a href="mailto:kvozipol@gmail.com">kvozipol@gmail.com</a></p>
-<p><small>Last updated: 19 November 2026</small></p>
+<p><small>Last updated: 26 November 2026</small></p>
 
 <h2>1. Summary</h2>
-<p>Your food diary stays on your device. The app connects to Open Food Facts for barcode lookups. If you choose to use Food photo or send feedback, Ration sends the data described below to our server. The free version may show advertising. Ration Plus removes advertising and unlocks additional features.</p>
+<p>Your food diary stays on your device. Barcode lookups send only the barcode number to Open Food Facts (section 7). We do not collect, receive, sell or share the diary data you enter. The free version of Ration shows ads from Google AdMob, and for those ads Google receives some technical data described in section 4. Ration Plus, a paid option, removes the ads and adds extra features (section 6). Only the optional «Food photo» feature of Ration Plus sends a photo to our server (section 7a).</p>
 
 <h2>2. Data stored on your device</h2>
 <p>The app stores the following only in its private storage on your phone: your profile for the personal calorie norm (sex, year of birth, height, weight, activity level, weight goal and target date), foods you log and their amounts, your own foods, daily calorie target, water, steps, workouts and your notes about them, weight and body measurements, and app settings (theme and language). This diary data never leaves the device through the app and is never sent to us or to advertisers.</p>
 
-<h2>3. No account</h2>
-<p>Ration has no user account or sign-in. Our Supabase server in the European Union (Ireland) processes requests for Food photo and feedback.</p>
+<h2>3. No account; our server only for «Food photo»</h2>
+<p>Ration has no user account and no sign-in. Everything you enter is stored on your phone. Our server is used only for the «Food photo» feature of Ration Plus: the photo you choose is sent to our server (Supabase, European Union, Ireland) and from there to the Google Gemini API for recognition. Neither the photo nor the result is stored on the server. The server keeps only a hash (an anonymous fingerprint) of the Ration Plus purchase token and a daily photo counter for the usage limit. No diary data, name, e-mail or other personal data is sent to the server.</p>
 
 <h2>4. Advertising (free version)</h2>
-<p>The free version can display Google AdMob banners when AdMob is enabled. In version 1.5.0 (build 6), AdMob is included but Google banner ads are not configured. When AdMob ads are enabled, Google may collect or receive the following data under its policies:</p>
+<p>The free version shows ads from Google AdMob: a banner on some screens and, now and then, a full-screen ad after a finished action (never while you type). Ration Plus shows no ads. To load ads, the app connects to the Internet. Google may collect or receive the following, under Google's own policies:</p>
 <ul>
 <li>the device advertising ID (Android advertising ID);</li>
 <li>your IP address and the approximate location derived from it;</li>
@@ -31,30 +31,25 @@
 <p>The app also shows a banner for our other app, Family Budget. This banner is part of the app itself and sends no data.</p>
 
 <h2>5. Your consent (EEA, UK and Switzerland)</h2>
-<p>When AdMob is enabled, Ration uses Google's consent form where required, including in the European Economic Area, the United Kingdom and Switzerland. Where the option is available, you can change your choice in Settings → Ad settings. You can reset or delete the advertising ID in Android settings.</p>
+<p>If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your consent using Google's consent form before ads are personalised. You can change your choice at any time in the app: Settings → Ad settings. You can also reset or delete the advertising ID in your Android settings.</p>
 
 <h2>6. Purchases (Ration Plus)</h2>
-<p>Ration Plus is available as a subscription or a one-time purchase. It removes ads and unlocks Food photo, detailed monthly statistics, PDF reports and additional themes. Google Play processes payments. We do not receive your payment card details. The app stores your Plus status on your device, and our server verifies your purchase when you use Food photo (section 7a).</p>
+<p>Ration Plus (subscription or one-time purchase) gives: no ads, «Food photo», detailed monthly statistics, a PDF report and extra themes. All other features are free. Purchases are processed by Google Play under Google's terms. We do not receive your payment card details. The app only checks with Google Play whether you own Ration Plus; this status is stored on your device.</p>
 
 <h2>7. Permissions and barcode scanning</h2>
-<p>Ration uses Internet access for barcode lookups, Google Play purchases, Food photo, feedback and ads when configured. The camera opens when you choose a camera feature and grant permission. Google ML Kit processes barcode images on your device. For a product lookup, Ration sends the barcode number to <a href="https://world.openfoodfacts.org">Open Food Facts</a>. Google ML Kit may collect scanner usage events, diagnostics and a per-installation identifier. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google’s ML Kit data disclosure</a>.</p>
+<p>The app uses Internet access for ads, purchases, barcode lookups, «Food photo» and Feedback. The camera is used only for scanning a product barcode or taking a food photo, and only after you tap «Barcode» or «Food photo» and allow it. For barcodes: The picture is processed on your phone (Google ML Kit, built into the app) and is not saved or sent anywhere. Only the barcode number (for example 4600494600155) is sent to the open database Open Food Facts (<a href="https://world.openfoodfacts.org">openfoodfacts.org</a>) to get the product name and nutrition values; no account, name or other personal data is sent. A product found this way is saved on your phone as your own product. The app does not request access to contacts, precise location, microphone, health sensors or other personal data.</p>
 
 <h2>7a. Food photos (Ration Plus)</h2>
-<p>When you use Food photo, Ration sends the compressed image, your selected app language, product identifier and Google Play purchase token to our server. The server checks the purchase with Google Play and sends the photo and recognition instructions to Google Gemini for food recognition. Our server does not store the image or recognition result. It records a hash of the purchase token and a daily usage count to enforce the photo limit. Google handles requests under its <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>, which describe how it can retain and process submitted content.</p>
+<p>If you use «Food photo» in Ration Plus, the app reduces the photo of your plate and sends it, together with the Google Play purchase token of Ration Plus, to our server (Supabase, European Union, Ireland). The server checks the purchase with Google Play and passes the photo to Google Gemini (Google's AI service) only to recognise the foods and estimate grams. Neither the photo nor the answer is stored on our server, and they are not used for anything else; the answer (a list of foods) is returned to your phone. The server keeps only a hash of the purchase token and a daily photo counter for the usage limit. Google processes the photo under its terms for the Gemini API. You choose each photo yourself; nothing is sent without your action.</p>
 
 <h2>7b. Feedback</h2>
-<p>When you submit Settings → Feedback, Ration sends your message and category, app version, app language, Android version and device model to our Supabase server. We store feedback to review reports and improve the app. Your name and email are not attached automatically. Any contact details you include in the message are part of the feedback we receive.</p>
+<p>If you send a message in Settings → Feedback, the app sends it to our server (Supabase, European Union) together with the topic, the app version, the app language, the Android version and the phone model. We use it only to read your message and improve the app. No diary data, name or e-mail is attached; if you want an answer, you can write your contact in the message yourself.</p>
 
-<h2>7c. Technical request logs</h2>
-<p>Supabase records technical details of Food photo and feedback requests, such as connection IP address, approximate location derived from it (city and postal code), request time and response status. These logs help us monitor and troubleshoot the service and are kept for the hosting provider’s configured log retention period.</p>
-
-<h2>8. Backups and PDF reports</h2>
+<h2>8. Backups</h2>
 <p>You can create a backup file yourself in Settings. You choose where the file is saved (for example, your phone storage or a cloud drive you use). Ration does not upload this file anywhere. Android system backup of app data is turned off.</p>
 
-<p>PDF reports and monthly statistics are created on the device. The app saves or shares a PDF only to the destination you select.</p>
-
 <h2>9. Deleting your data</h2>
-<p>Clearing Ration’s data in Android settings or uninstalling the app deletes the diary and other data stored in the app on your device. You manage any exported reports and backups separately. Uninstalling does not delete feedback already sent to our server or technical records described above. For privacy questions, use the contact address at the top of this page.</p>
+<p>Uninstalling the app, or clearing its data in Android settings, permanently deletes all data stored by Ration. Backup files you created are deleted by you. We hold no copy of your diary.</p>
 
 <h2>10. Children</h2>
 <p>Ration is not directed at children and is intended for adults (18+).</p>
@@ -69,16 +64,16 @@
 
 <h1 lang="ru">Политика конфиденциальности «Рацион»</h1>
 <p lang="ru"><strong>Приложение:</strong> Рацион, пакет <code>com.polvarix.ration</code><br><strong>Разработчик:</strong> Polvarix<br><strong>Связь:</strong> <a href="mailto:kvozipol@gmail.com">kvozipol@gmail.com</a></p>
-<p lang="ru"><small>Последнее обновление: 19 ноября 2026 г.</small></p>
+<p lang="ru"><small>Последнее обновление: 26 ноября 2026 г.</small></p>
 <div lang="ru">
 <h2>1. Кратко</h2>
-<p>Ваш дневник питания хранится на устройстве. Для поиска по штрихкоду приложение обращается к Open Food Facts. Если вы пользуетесь функцией «Фото еды» или отправляете обратную связь, «Рацион» передаёт на наш сервер данные, описанные ниже. В бесплатной версии может показываться реклама. «Рацион Плюс» отключает рекламу и открывает дополнительные функции.</p>
+<p>Ваш дневник питания остаётся на устройстве. При поиске по штрих-коду в Open Food Facts уходит только номер кода (раздел 7). Мы не собираем, не получаем, не продаём и не передаём данные дневника. В бесплатной версии «Рациона» показывается реклама Google AdMob, и для неё Google получает некоторые технические данные (см. раздел 4). Платная опция «Рацион Плюс» убирает рекламу и добавляет функции (раздел 6). Только функция «Фото еды» в «Рацион Плюс» отправляет фото на наш сервер (раздел 7а).</p>
 <h2>2. Что хранится на устройстве</h2>
 <p>Только в собственном хранилище приложения на телефоне: профиль для личной нормы калорий (пол, год рождения, рост, вес, уровень активности, цель по весу и дата цели), записанные продукты и их количество, ваши продукты, дневная норма калорий, вода, шаги, тренировки и заметки о самочувствии, вес и замеры тела, настройки (тема и язык). Через приложение эти данные никуда не уходят — ни нам, ни рекламодателям.</p>
-<h2>3. Без аккаунта</h2>
-<p>В «Рационе» нет аккаунта и входа. Наш сервер Supabase в Европейском союзе (Ирландия) обрабатывает запросы функции «Фото еды» и сообщения обратной связи.</p>
+<h2>3. Без аккаунта; сервер — только для «Фото еды»</h2>
+<p>В «Рационе» нет аккаунта и входа. Всё, что вы вводите, хранится на телефоне. Наш сервер используется только для функции «Фото еды» в «Рацион Плюс»: выбранное вами фото передаётся на наш сервер (Supabase, Европейский союз, Ирландия) и оттуда в Google Gemini API для распознавания. Ни фото, ни результат на сервере не сохраняются. Сервер хранит только хэш (обезличенный отпечаток) токена покупки «Рацион Плюс» и дневной счётчик фото для лимита. Данные дневника, имя, e-mail и другие личные данные на сервер не передаются.</p>
 <h2>4. Реклама (бесплатная версия)</h2>
-<p>В бесплатной версии могут показываться баннеры Google AdMob, если этот сервис настроен. В версии 1.5.0 (сборка 6) библиотека AdMob включена в приложение, а рекламные блоки Google не настроены. При включённой рекламе AdMob Google может собирать или получать следующие данные по своим правилам:</p>
+<p>В бесплатной версии показывается реклама Google AdMob: баннер на некоторых экранах и иногда полноэкранная реклама после завершённого действия (никогда во время ввода). В «Рацион Плюс» рекламы нет. Чтобы загрузить рекламу, приложение выходит в интернет. Google может собирать или получать по своим правилам:</p>
 <ul>
 <li>рекламный идентификатор устройства (рекламный ID Android);</li>
 <li>IP-адрес и примерное местоположение, определённое по нему;</li>
@@ -87,24 +82,21 @@
 <p>Google использует эти данные для показа и оценки рекламы, защиты от мошенничества и аналитики. Как Google использует данные из приложений, работающих с его сервисами: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</p>
 <p>Кроме того, приложение показывает баннер нашего второго приложения «Семейный бюджет». Этот баннер — часть самого приложения и никаких данных не передаёт.</p>
 <h2>5. Согласие (ЕЭЗ, Великобритания и Швейцария)</h2>
-<p>Если AdMob включён, «Рацион» использует форму согласия Google там, где это требуется, в том числе в Европейской экономической зоне, Великобритании и Швейцарии. Если доступен пункт «Настройки → Настройки рекламы», в нём можно изменить свой выбор. Рекламный идентификатор можно сбросить или удалить в настройках Android.</p>
+<p>Если вы находитесь в Европейской экономической зоне, Великобритании или Швейцарии, приложение спрашивает ваше согласие через форму Google, прежде чем реклама станет персонализированной. Изменить выбор можно в любой момент: Настройки → Настройки рекламы. Сбросить или удалить рекламный идентификатор можно в настройках Android.</p>
 <h2>6. Покупки («Рацион Плюс»)</h2>
-<p>«Рацион Плюс» доступен по подписке или как разовая покупка. Он отключает рекламу и открывает «Фото еды», подробную статистику за месяц, отчёты PDF и дополнительные темы. Оплату обрабатывает Google Play. Мы не получаем данные банковской карты. Приложение хранит статус «Плюса» на телефоне, а наш сервер проверяет покупку при использовании функции «Фото еды» (раздел 7а).</p>
+<p>«Рацион Плюс» (подписка или разовая покупка) даёт: без рекламы, «Фото еды», подробную статистику за месяц, отчёт PDF и дополнительные темы. Все остальные функции бесплатны. Оплату проводит Google Play по своим условиям. Данные банковской карты мы не получаем. Приложение только проверяет в Google Play, есть ли у вас «Рацион Плюс»; этот статус хранится на устройстве.</p>
 <h2>7. Разрешения и сканер штрих-кода</h2>
-<p>«Рацион» использует интернет для поиска по штрихкоду, покупок через Google Play, функции «Фото еды», обратной связи и рекламы, когда она настроена. Камера открывается, когда вы выбираете соответствующую функцию и даёте разрешение. Изображения штрихкодов Google ML Kit обрабатывает на телефоне. Для поиска продукта «Рацион» отправляет номер штрихкода в <a href="https://world.openfoodfacts.org">Open Food Facts</a>. Google ML Kit может собирать события использования сканера, диагностические сведения и идентификатор установки. Подробнее — в <a href="https://developers.google.com/ml-kit/android-data-disclosure">описании данных ML Kit</a>.</p>
+<p>Интернет используется для рекламы, покупок, поиска по штрих-коду, «Фото еды» и обратной связи. Камера нужна только для сканирования штрих-кода или фото еды и включается лишь после нажатия «Штрих-код» или «Фото еды» и вашего разрешения. Для штрих-кода: Изображение обрабатывается на телефоне (Google ML Kit, встроенный в приложение) и никуда не сохраняется и не отправляется. В открытую базу Open Food Facts (<a href="https://world.openfoodfacts.org">openfoodfacts.org</a>) отправляется только номер штрих-кода (например, 4600494600155), чтобы получить название и пищевую ценность; аккаунт, имя и другие личные данные не передаются. Найденный продукт сохраняется на телефоне как ваш продукт. Приложение не запрашивает доступ к контактам, точной геолокации, микрофону, датчикам здоровья и другим личным данным.</p>
 <h2>7а. Фото еды («Рацион Плюс»)</h2>
-<p>Когда вы пользуетесь функцией «Фото еды», приложение отправляет на наш сервер уменьшенный снимок, язык приложения, идентификатор товара и токен покупки Google Play. Сервер проверяет покупку в Google Play и передаёт снимок и задание на распознавание в Google Gemini. Наш сервер не сохраняет снимок или результат распознавания. Он записывает хэш токена покупки и дневной счётчик для ограничения числа запросов. Google обрабатывает запросы по <a href="https://ai.google.dev/gemini-api/terms">условиям Gemini API</a>, в которых описано, как могут храниться и обрабатываться отправленные материалы.</p>
+<p>Если вы пользуетесь функцией «Фото еды» в «Рацион Плюс», приложение уменьшает фото тарелки и отправляет его вместе с токеном покупки «Рацион Плюс» на наш сервер (Supabase, Европейский союз, Ирландия). Сервер проверяет покупку в Google Play и передаёт фото в Google Gemini (сервис ИИ Google) только для распознавания продуктов и оценки граммов. Ни фото, ни ответ на нашем сервере не сохраняются и ни для чего другого не используются; ответ (список продуктов) возвращается на телефон. Сервер хранит только хэш токена покупки и дневной счётчик фото для лимита. Google обрабатывает фото по своим условиям Gemini API. Каждое фото вы выбираете сами; без вашего действия ничего не отправляется.</p>
 
 <h2>7б. Обратная связь</h2>
-<p>Когда вы отправляете сообщение через «Настройки → Обратная связь», «Рацион» передаёт на сервер Supabase текст и тему сообщения, версию и язык приложения, версию Android и модель устройства. Мы храним сообщения, чтобы разбирать обращения и улучшать приложение. Имя и электронная почта автоматически не добавляются. Если вы сами укажете контакт в сообщении, он поступит вместе с его текстом.</p>
-<h2>7в. Технические журналы запросов</h2>
-<p>Supabase записывает технические сведения о запросах распознавания фото и обратной связи: IP-адрес соединения, приблизительное местоположение по нему (город и почтовый индекс), время запроса и код ответа. Журналы помогают следить за работой сервиса и разбирать ошибки. Срок их хранения определяется настройками хостинга.</p>
-
-<h2>8. Резервные копии и отчёты PDF</h2>
+<p>Если вы отправляете сообщение в «Настройки → Обратная связь», приложение передаёт его на наш сервер (Supabase, Европейский союз) вместе с темой, версией приложения, языком приложения, версией Android и моделью телефона. Мы используем это только чтобы прочитать сообщение и улучшить приложение. Данные дневника, имя и e-mail не прикладываются; если вам нужен ответ, вы можете сами написать свой контакт в сообщении.</p>
+<h2>8. Резервные копии</h2>
 <p>Файл резервной копии вы создаёте сами в настройках и сами выбираете, где его сохранить. «Рацион» никуда его не загружает. Системное резервное копирование Android для приложения отключено.</p>
 <p>Отчёт PDF для врача или диетолога (в «Рацион Плюс») создаётся на телефоне из вашего дневника. «Рацион» никуда его не отправляет: файл уходит только туда, куда вы сами его сохраните или отправите кнопкой «Поделиться». Статистика за месяц тоже считается на телефоне.</p>
 <h2>9. Удаление данных</h2>
-<p>Очистка данных «Рациона» в настройках Android или удаление приложения удаляет дневник и другие данные, хранящиеся в приложении на телефоне. Экспортированными отчётами и копиями вы управляете отдельно. Удаление приложения не удаляет отправленные сообщения обратной связи и технические записи, описанные выше. По вопросам конфиденциальности можно написать на адрес в начале страницы.</p>
+<p>Удаление приложения или очистка его данных в настройках Android безвозвратно удаляет все данные «Рациона». Созданные вами файлы копий вы удаляете сами. Копии вашего дневника у нас нет.</p>
 <h2>10. Дети</h2>
 <p>Приложение не предназначено для детей и рассчитано на взрослых (18+).</p>
 <h2>11. Здоровье</h2>
